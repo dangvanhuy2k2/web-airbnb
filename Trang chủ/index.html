@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ AIRBNB</title>
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/grid.css">
+    <link rel="stylesheet" href="../asset/css/responsive.css">
+    <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="info-about-covid">
+        <a href="#">Nhận thông tin mới nhất về biện pháp ứng phó COVID-19 của chúng tôi</a>
+    </div>
+    <header>
+        <div class="grid wide">
+            <div class="header__heading">
+                <div class="heading__logo">
+                    <img src="https://fullstack.edu.vn/assets/icon/f8_icon.png " alt=" " class="heading__logo-img">
+                    <h3 class="heading__logo-name">airbnb</h3>
+                </div>
+                <div class="heading__location">
+                    <ul class="location__list">
+                        <li class="location__item location__item-focus ">
+                            <label for="openNavFirst" class="location__link ">Nơi ở</label>
+                        </li>
+                        <li class="location__item location__item-nofocus">
+                            <label for="openNavSecond" class="location__link ">Trải nghiệm</label>
+                        </li>
+                        <li class="location__item location__item-nofocus ">
+                            <a href="../Trang trải nghiệm trực tuyến/trainghiemtructuyen.html" target="__blank" class="location__link ">Trải nghiệm trực tuyến</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="heading__account">
+                    <a class="account__home">Trở thành chủ nhà</a>
+                    <span><i class="fas fa-globe account__icon "></i></span>
+                    <label form="openForm" class="account__info">
+                        <i class="fas fa-align-justify account__info-bars"></i>
+                        <i class="fas fa-user-circle account__info-user "></i>
+                        <input type="checkbox" id = "openForm">
+                        <div class="account__info-menu">
+                            <ul class="account__info-list">
+                                <li class="account__info-item">
+                       <label for = "openModal" class="account__info-item-link">Đăng ký</label>
+                    </li>
+                    <li class="account__info-item">
+                        <label for="openModal" class="account__info-item-link">Đăng nhập</label>
+                    </li>
+                    <li class="account__info-item">
+                        <a href="" class="account__info-item-link">Cho thuê nhà</a></li>
+                    <li class="account__info-item">
+                        <a href="" class="account__info-item-link">Tổ chức trải nghiêm</a></li>
+                    <li class="account__info-item">
+                        <a href="" class="account__info-item-link">Trợ giúp</a>
+                    </li>
+                    </ul>
+                </div>
+                </label>
+            </div>
+        </div>
+        <div class="header__body">
+            <div class="header__body-nav">
+                <input type="checkbox" id="openNavFirst">
+                <input type="checkbox" id="openNavSecond">
+                <ul class="header__body-list">
+                    <label for="openformlocation" class="header__body-item location">
+                        <div  class="header__body-container">
+                            <span class="header__body-title ">Địa điểm</span>
+                            <span class="header__body-name">Bạn sắp đi đâu?</span>
+                        </div>
+                        <!--form location -->
+                        <input type="checkbox" id="openformlocation">
+                        <div class="form__location">
+                            <span class="form__location-text">MỌI LÚC,MỌI NƠI</span>
+                            <div class="form__location-btn">
+                                <span>Tìm kiếm linh hoạt</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </label>
+                    <li class="header__body-item check-in">
+                        <div class="header__body-container">
+                            <span class="header__body-title">Nhận phòng</span>
+                            <span class="header__body-name">Thêm ngày</span>
+                        </div>
+                    </li>
+                    <li class="header__body-item check-out">
+                        <div class="header__body-container">
+                            <span class="header__body-title">Trả phòng</span>
+                            <span class="header__body-name">Thêm ngày</span>
+                        </div>
+                    </li>
+                    <label for="openFormGuest" class="header__body-item guest">
+                        <div class="header__body-container">
+                            <span class="header__body-title">Khách</span>
+                            <span class="header__body-name">Thêm khách</span>
+                        </div>
+                        <div class="header__body-icon  circle">
+                            <i class="fas fa-search nav__search-icon"></i>
+                        </div>
+                        <input type="checkbox" id = "openFormGuest">
+                        <div class="form__add-guest">
+                            <ul class="form__add-guest-list">
+                                <li class="form__add-guest-item">
+                                    <div class="form__add-guest-left">
+                                        <span>Người lớn</span>
+                                        <span>Từ 13 tuổi trở lên</span>
+                                    </div>
+
+                                    <div class="form__add-guest-right">
+                                        <span>0</span>
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </li>
+                                <li class="form__add-guest-item">
+                                    <div class="form__add-guest-left">
+                                        <span>Trẻ em</span>
+                                        <span>Độ tuổi 2 - 12</span>
+                                    </div>
+
+                                    <div class="form__add-guest-right">
+                                        <span>0</span>
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </li>
+                                <li class="form__add-guest-item">
+                                    <div class="form__add-guest-left">
+                                        <span>Em bé</span>
+                                        <span>Dưới 2</span>
+                                    </div>
+
+                                    <div class="form__add-guest-right">
+                                        <span>0</span>
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </li>
+                                <li class="form__add-guest-item">
+                                    <div class="form__add-guest-left">
+                                        <span>Thú cưng</span>
+                                        <span class="add-guest-link">Bạn muốn  mang theo động vật hỗ trợ?</span>
+                                    </div>
+
+                                    <div class="form__add-guest-right">
+                                        <span>0</span>
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                            <span class="form__add-guest-des">Nếu bạn may mắn có nhiều hơn 2 thú cưng đi cùng, hãy nhớ cho Chủ nhà biết.</span>
+                        </div>
+                    </label>
+                </ul>
+                <ul class="header__body-list-second">
+                    <label for="openSearchLocation" class="header__body-item-second">
+                        <div class="header__body-container">
+                            <span class="header__body-title ">Địa điểm</span>
+                            <span class="header__body-name">Bạn sắp đi đâu?</span>
+
+                            <!-- search lcation -->
+                        </div>
+                        <input type="checkbox" id="openSearchLocation">
+                        <div class="seach-location">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>Lân cận</span>
+                        </div>
+                    </label>
+                    <li class="header__body-item-second">
+                        <div class="header__body-container">
+                            <span class="header__body-title">Ngày</span>
+                            <span class="header__body-name">Thêm Thời điểm bạn muốn tham gia</span>
+                        </div>
+                        <label for="extend" class="header__body-icon header__body-second-icon">
+                                <i  class="fas fa-search nav__search-icon nav__search-second-icon"></i>
+                                <input type="checkbox" id="extend">
+                                <span class="header__body-second-span">Tìm kiếm</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="header__body-footer">
+        <div class="grid-full-width">
+            <img class="header__body-img" src="https://i.pinimg.com/originals/e8/17/02/e817024093b708bdb4d9ca8718ebc5ed.png" alt="">
+            <div class="body-footer-title">
+                <h1 class=""> Bạn chưa biết nên đi đâu?
+                    <br> Tuyệt!
+                </h1>
+                <a href="" class="body-footer-link">
+                    <h3>Tìm kiếm linh hoạt</h3>
+                </a>
+            </div>
+            <label for="openSearchMobile" class="header__search-mobile">
+                <i class="fas fa-search"></i>
+                <span>Bạn sắp đi đâu?</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="grid wide">
+            <div class="body__title-container">
+                <h1 class="body__title">Cảm hứng cho chuyến đi tiếp theo của bạn</h1>
+                <div class="body__title-icon">
+                    <i class="fas fa-chevron-left "></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="row row-no-warp">
+                <div class="col l-3 m-5 c-7">
+                    <div class="body__location">
+                        <img src="https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=240" alt="" class="location-header-img">
+                        <div class="location-body location-body-first ">
+                            <h2 class="location-address">Hà Nội</h2>
+                            <span class="location__distance">
+                                  Cách 13.252km
+                             </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-3 m-5 c-7">
+                    <div class="body__location">
+                        <img src="https://a0.muscache.com/im/pictures/99eb5993-4277-4c1e-8db1-b639a96758a0.jpg?im_w=240" alt="" class="location-header-img">
+                        <div class="location-body">
+                            <h2 class="location-address">Thành phố Hạ Long</h2>
+                            <span class="location__distance">
+                                Cách 13.237km
+                             </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-3 m-5 c-7">
+                    <div class="body__location">
+                        <img src="https://a0.muscache.com/im/pictures/5d597532-b55a-439d-baf7-9c0875423f44.jpg?im_w=240" alt="" class="location-header-img">
+                        <div class="location-body">
+                            <h2 class="location-address">Mỹ Đình</h2>
+                            <span class="location__distance">
+                              Cách 13.154km
+                             </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-3 m-5 c-7">
+                    <div class="body__location ">
+                        <img src="https://a0.muscache.com/im/pictures/0538dab4-a0fc-4035-b6b2-40fa3532ee7b.jpg?im_w=240" alt="" class="location-header-img">
+                        <div class="location-body location-body-last">
+                            <h2 class="location-address">Thành phố Ninh Bình</h2>
+                            <span class="location__distance">
+                                  Cách 13.335km
+                             </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid wide">
+            <div class="body__title-container">
+                <h1 class="body__title">Khám phá Trải nghiệm Airbnb</h1>
+            </div>
+            <div class="row">
+                <div class="col l-6 m-6 c-12">
+                    <div class="body__experience body__experience-first">
+                        <img class="body__experience-img" src="https://tse3.mm.bing.net/th?id=OIP.q4qlBn9cIs2-qhvYtkzGPgHaD-&pid=Api&P=0&w=328&h=177">
+                        <div class="body__experience-des">
+                            <h2>Những điều <br> nên trải nghiệm <br>trong chuyến đi <br> của bạn</h2>
+                            <a href="../TRANG TRẢ NGHIỆM/trainghiem.html">Trải nghiêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-6 m-6 c-12">
+                    <div class="body__experience">
+                        <img class="body__experience-img" src="https://cdn.sudospaces.com/kinhnghiemditour-com/home/knditour/web/kinhnghiemditour.com/public_html/2020/01/cap-tinh-nhan-di-khap-viet-nam-chup-anh-follow-me-mytour-2.jpg" alt="" class="location-header-img">
+                        <div class="body__experience-des">
+                            <h2>Những điều nên <br>trải nghiệm tại nhà</h2>
+                            <a href="../Trang trải nghiệm trực tuyến/trainghiemtructuyen.html">Trải nghiêm trực tuyến</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="body__bottom">
+                <img class="body__bottom-ing" src="https://tse4.mm.bing.net/th?id=OIP.ANAf6bX8W46K2QqzZ086cgHaE_&pid=Api&P=0&w=259&h=175" alt="">
+                <div class="body__bottom-des">
+                    <h1>Bạn có thắc mắc<br> về việc<br> đón tiếp khách?</h1>
+                </div>
+                <a href="" class="body__bottom-link">Hỏi ý kiến chủ nhà siêu cấp</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="grid wide">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="fom__top-container">
+                            <h5 class="footer__top-title">Hỗ trợ</h5>
+                            <ul class="footer__top-list">
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Trung Tâm hỗ trợ</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Thông tin an toàn</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Các tùy chọn hủy</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Biện pháp ứng phó với đại dịch COVID-19 của chúng tôi</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Hỗ trợ người khuyết tật</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Báo cáo lo ngại của hàng xóm</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="fom__top-container">
+                            <h5 class="footer__top-title">Cộng đồng</h5>
+                            <ul class="footer__top-list">
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Airbnb.org: nhà ở cứu trợ</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Hỗ trợ dân tị nạn Afghanistan</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Vì sự đa dạng và thân thuộc</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Chống phân biệt đối xử</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="fom__top-container">
+                            <h5 class="footer__top-title">Đón tiếp khách</h5>
+                            <ul class="footer__top-list">
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Thử đón tiếp khách</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">AirCover: bảo vệ cho Host</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Xem tài nguyên đón tiếp khách</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Truy cập diễn đàn cộng đồng</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Đón tiếp khách có trách nhiệm</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="fom__top-container">
+                            <h5 class="footer__top-title">Giới thiệu</h5>
+                            <ul class="footer__top-list">
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Trang tin tức</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Tìm hiểu các tính năng mới</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Thư ngỏ từ các nhà sáng lập</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Cơ hội nghề nghiệp</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Nhà đầu tư</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Airbnb Luxe</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-left">
+                    <span>© 2021 Airbnb, Inc.</span>
+                    <ul class="footer__bottom-left-list">
+                        <li class="footer__bottom-left-item"><a href="" class="footer__bottom-left-link">Quyền riêng tư</a></li>
+                        <li class="footer__bottom-left-item"><a href="" class="footer__bottom-left-link">Điều khoản</a></li>
+                        <li class="footer__bottom-left-item"><a href="" class="footer__bottom-left-link">Sơ đồ trang web</a></li>
+                    </ul>
+                </div>
+                <div class="footer__bottom-right">
+                    <label for="openModal2" class="footer__bottom-right-language">
+                        <i class="fas fa-globe"></i>
+                        <a>Tiếng Việt(VN)</a>
+                    </label>
+                    <div class="footer__bottom-right-currency">
+                        <span>$</span>
+                        <a href="">USD</a>
+                    </div>
+                    <div class="footer__bottom-right-social">
+                        <ul class="footer__bottom-right-list">
+                            <li class="footer__bottom-right-item">
+                                <a href="" class="footer__bottom-right-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="footer__bottom-right-item">
+                                <a href="" class="footer__bottom-right-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="footer__bottom-right-item">
+                                <a href="" class="footer__bottom-right-link">
+                                    <i class="fab fa-instagram-square"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- form select languade -->
+    <input type="checkbox" id="openModal2">
+    <label for="openModal2" class="modal2"></label>
+    <div class="form__language">
+        <div class="form__language-top">
+            <label for="openModal2" class="fas fa-times"></label>
+        </div>
+        <div class="form__language-body">
+            <div class="form__language-body-wrapper">
+                <h2>Ngôn ngữ và khu vực được đề xuất</h2>
+                <div class="form__languade-propose">
+                    <div class="row">
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">Việt Nam</p>
+                                <span class="form__languade-name">Việt nam</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United States</span>
+
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form__language-body-wrapper">
+                <h2>Chọn ngôn ngữ và khu vực</h2>
+                <div class="form__languade-propose">
+                    <div class="row">
+                        <div class="col l-2-4">
+                            <div class="form__language-container language--selceted">
+                                <p class="form__language-title">Việt Nam</p>
+                                <span class="form__languade-name">Việt nam</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United States</span>
+
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">Việt Nam</p>
+                                <span class="form__languade-name">Việt nam</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United States</span>
+
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">Việt Nam</p>
+                                <span class="form__languade-name">Việt nam</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United States</span>
+
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">Việt Nam</p>
+                                <span class="form__languade-name">Việt nam</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United States</span>
+
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">Việt Nam</p>
+                                <span class="form__languade-name">Việt nam</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United States</span>
+
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                        <div class="col l-2-4">
+                            <div class="form__language-container">
+                                <p class="form__language-title">English</p>
+                                <span class="form__languade-name">United Kingdom</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- form search in mobile -->
+    <input type="checkbox" id="openSearchMobile">
+    <div class="form__search-mobile">
+        <div class="form__search-btn">
+            <label for="openSearchMobile" class="fas fa-chevron-left"></label>
+            <input type="text" placeholder="Bạn sẽ đi đâu?">
+        </div>
+        <div class="form__location-mobile">
+            <span class="form__location-mobile-text">MỌI LÚC,MỌI NƠI</span>
+            <div class="form__location-mobile-btn">
+                <span>Tìm kiếm linh hoạt</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+    <!-- foem login and register -->
+    <input type="checkbox" id="openModal">
+    <div class="form">
+        <div class="form__header">
+            <label for="openModal" class="fas fa-times form__header-icon"></label>
+            <span class="form__header-title">Đăng ký hoặc đăng nhập</span>
+        </div>
+        <div class="form__body">
+            <div class="form__body-top">
+                <h3 class="form__body-title">
+                    Chào mừng bạn đến với Airbnb
+                </h3>
+                <input type="text" class="form__body-input input-nation">
+                <input type="text" class="form__body-input input-phone">
+                <span class="form__body-policy">
+                    Chúng tôi sẽ gọi điện hoặc nhắn tin cho bạn để xác nhận số điện thoại. Có áp dụng phí dữ liệu và phí tin nhắn tiêu chuẩn. 
+                    <a href="" class="form__body-policy-link">Chính sách về quyền riêng tư</a>
+                </span>
+                <button class="form__body-continue">Tiếp tục</button>
+            </div>
+            <span class="swtich">hoặc</span>
+            <div class="form__body-footer">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__item-link">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Tiếp tục với facebook</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__item-link">
+                            <i class="fab fa-google"></i>
+                            <span>Tiếp tục với Google</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__item-link">
+                            <i class="fab fa-apple"></i>
+                            <span>Tiếp tục với Apple</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__item-link">
+                            <i class="far fa-envelope"></i>
+                            <span>Tiếp tục với Email</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <label for="openModal" class="modal">
+    </label>
+</body>
+<script></script>
+
+</html>

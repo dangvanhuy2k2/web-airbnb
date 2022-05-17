@@ -1,0 +1,231 @@
+/*mobile and tablet */
+
+@media (max-width: 1023px) {
+    .hideOnMobileTablet {
+        display: none;
+    }
+    .footer__top-list {
+        margin-bottom: 20px;
+    }
+    .heading__logo-name {
+        display: none;
+    }
+    .row.row-no-warp {
+        flex-wrap: unset;
+        overflow-x: auto;
+    }
+    .footer__bottom {
+        flex-direction: column-reverse;
+    }
+    .footer__bottom-left {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__bottom-left span {
+        margin: 15px 0 5px;
+    }
+    .footer__bottom-right {
+        transform: translateY(20px);
+    }
+    .footer__bottom-left {
+        transform: translateY(15px);
+    }
+    .grid-full-width {
+        width: 100%;
+    }
+}
+
+
+/* mobile */
+
+@media (max-width: 739px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .location-body {
+        height: 160px;
+    }
+    .body__location {
+        border-radius: 12px;
+    }
+    .body__experience-first {
+        margin-bottom: 20px;
+    }
+    .body__experience {
+        padding: 0 20px;
+    }
+    .body__experience-des {
+        left: 45px;
+    }
+    .body__experience-des h2 {
+        font-size: 30px;
+    }
+    header {
+        display: none;
+    }
+    .fom__top-container {
+        padding: 0 20px;
+    }
+    .body__bottom {
+        height: 550px;
+    }
+    .body__bottom-des,
+    .body__bottom-link {
+        left: 25px;
+    }
+    .body__bottom-des {
+        top: 30px;
+    }
+    .body__bottom-des h1 {
+        font-size: 40px;
+    }
+    .header__body-footer {
+        padding-bottom: 0;
+    }
+    .header__body-img {
+        height: 650px;
+    }
+    .body-footer-title {
+        top: 75%;
+    }
+    .body-footer-title h1 {
+        font-size: 30px;
+    }
+    .body-footer-link {
+        font-size: 15px;
+    }
+    .header__search-mobile {
+        display: flex;
+    }
+    .footer__bottom-right-currency {
+        margin-right: 0;
+    }
+    .footer__bottom-right-list {
+        display: none;
+    }
+    .body__title-container {
+        margin: 30px 20px;
+    }
+    .body__title {
+        font-size: 25px;
+        font-weight: 560;
+    }
+    .footer__bottom {
+        margin-top: 30px;
+    }
+    .body__title-icon {
+        display: flex;
+    }
+    .row.row-no-warp {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header__body-img {
+        height: 500px;
+    }
+    .body-footer-title {
+        top: 70%;
+    }
+    .body-footer-title h1 {
+        font-size: 20px;
+    }
+    .body-footer-link {
+        font-size: 10px;
+    }
+    .body__bottom-des h1 {
+        font-size: 40px;
+    }
+    .body__bottom-link {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .body__experience-des h2 {
+        font-size: 27px;
+    }
+    .body__bottom {
+        height: 500px;
+    }
+}
+
+
+/* tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hideOnTablet {
+        display: none;
+    }
+    .body__experience-des h2 {
+        font-size: 30px;
+    }
+    .header__heading {
+        position: relative;
+    }
+    .heading__location {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .header__body-nav {
+        margin-top: 60px;
+    }
+    .header__body-nav {
+        width: 100%;
+    }
+    .grid-full-width {
+        width: 100vw;
+    }
+    header {
+        padding-bottom: 2px;
+    }
+    .header__body-footer {
+        padding-bottom: 0;
+    }
+    .body__title {
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-weight: 540;
+    }
+    .body__experience {
+        height: 420px;
+    }
+    .body__bottom {
+        height: 390px;
+    }
+    .body__bottom-des h1 {
+        font-size: 45px;
+        margin-bottom: px;
+    }
+    .body__bottom-link {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .form {
+        width: 80%;
+    }
+    .form__body {
+        height: 40%;
+    }
+    .form__language {
+        width: 90%;
+    }
+    .location {
+        width: 25%;
+    }
+    .guest {
+        width: unset;
+        flex: 1;
+    }
+    .header__body-item-second:last-child {
+        flex: 4;
+    }
+}
+
+@media (min-widtd: 1024px) {
+    .header__body-nav {
+        width: 80%;
+    }
+}

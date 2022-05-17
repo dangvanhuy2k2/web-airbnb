@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang trải nghiệm</title>
+    <link rel="stylesheet" href="../asset/css/reset.css">
+    <link rel="stylesheet" href="../asset/css/style.css">
+    <link rel="stylesheet" href="../asset/css/responsive.css">
+    <link rel="stylesheet" href="../asset/css/grid.css">
+    <link rel="stylesheet" href="../Trang trải nghiệm trực tuyến/css/style1.css">
+    <link rel="stylesheet" href="./trainghiemcss/style2.css">
+    <link rel="stylesheet" href="./trainghiemcss/responsive2.css">
+    <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <header>
+        <div class="grid wide header__height">
+            <div class="header__heading">
+                <div class="heading__element heading__logo">
+                    <img src="https://fullstack.edu.vn/assets/icon/f8_icon.png " alt=" " class="heading__logo-img">
+                    <h3 class="heading__logo-name">airbnb</h3>
+                </div>
+                <div class="heading__element heading__nav">
+                    <div class="heading__nav-contanier">
+                        <div class="heading__nav-left">
+                            <span>Lân cận</span>
+                        </div>
+                        <div class="heading__nav-right">
+                            <span>Thêm ngày</span>
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="heading__element heading__nav-second hide">
+                    <ul class="heading__nav-second-list">
+                        <li class="heading__nav-second-item focus">Nơi ở</li>
+                        <li class="heading__nav-second-item no-focus">Trải nghiệm</li>
+                    </ul>
+                </div>
+                <div class="heading__element heading__account">
+                    <a class="account__home">Trở thành chủ nhà</a>
+                    <span><i class="fas fa-globe account__icon "></i></span>
+                    <label form="openForm" class="account__info">
+                        <i class="fas fa-align-justify account__info-bars"></i>
+                        <i class="fas fa-user-circle account__info-user "></i>
+                        <input type="checkbox" id = "openForm">
+                        <div class="account__info-menu">
+                            <ul class="account__info-list">
+                                <li class="account__info-item">
+                               <label for = "openModal" class="account__info-item-link">Đăng ký</label>
+                    </li>
+                    <li class="account__info-item">
+                        <label for="openModal" class="account__info-item-link">Đăng nhập</label>
+                    </li>
+                    <li class="account__info-item">
+                        <a href="" class="account__info-item-link">Cho thuê nhà</a></li>
+                    <li class="account__info-item">
+                        <a href="" class="account__info-item-link">Tổ chức trải nghiêm</a></li>
+                    <li class="account__info-item">
+                        <a href="" class="account__info-item-link">Trợ giúp</a>
+                    </li>
+                    </ul>
+                </div>
+                </label>
+            </div>
+        </div>
+        <div class="header__body-nav hide">
+            <ul class="header__body-list hide">
+                <label for="openformlocation" class="header__body-item location">
+                    <div  class="header__body-container">
+                        <span class="header__body-title ">Địa điểm</span>
+                        <span class="header__body-name">Bạn sắp đi đâu?</span>
+                    </div>
+                    <!--form location -->
+                    <input type="checkbox" id="openformlocation">
+                    <div class="form__location">
+                        <span class="form__location-text">MỌI LÚC,MỌI NƠI</span>
+                        <div class="form__location-btn">
+                            <span>Tìm kiếm linh hoạt</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </label>
+                <li class="header__body-item check-in">
+                    <div class="header__body-container">
+                        <span class="header__body-title">Nhận phòng</span>
+                        <span class="header__body-name">Thêm ngày</span>
+                    </div>
+                </li>
+                <li class="header__body-item check-out">
+                    <div class="header__body-container">
+                        <span class="header__body-title">Trả phòng</span>
+                        <span class="header__body-name">Thêm ngày</span>
+                    </div>
+                </li>
+                <label for="openFormGuest" class="header__body-item guest">
+                    <div class="header__body-container">
+                        <span class="header__body-title">Khách</span>
+                        <span class="header__body-name">Thêm khách</span>
+                    </div>
+                    <div class="header__body-icon  circle">
+                        <i class="fas fa-search nav__search-icon"></i>
+                    </div>
+                    <input type="checkbox" id = "openFormGuest">
+                    <div class="form__add-guest">
+                        <ul class="form__add-guest-list">
+                            <li class="form__add-guest-item">
+                                <div class="form__add-guest-left">
+                                    <span>Người lớn</span>
+                                    <span>Từ 13 tuổi trở lên</span>
+                                </div>
+
+                                <div class="form__add-guest-right">
+                                    <span>0</span>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </li>
+                            <li class="form__add-guest-item">
+                                <div class="form__add-guest-left">
+                                    <span>Trẻ em</span>
+                                    <span>Độ tuổi 2 - 12</span>
+                                </div>
+
+                                <div class="form__add-guest-right">
+                                    <span>0</span>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </li>
+                            <li class="form__add-guest-item">
+                                <div class="form__add-guest-left">
+                                    <span>Em bé</span>
+                                    <span>Dưới 2</span>
+                                </div>
+
+                                <div class="form__add-guest-right">
+                                    <span>0</span>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </li>
+                            <li class="form__add-guest-item">
+                                <div class="form__add-guest-left">
+                                    <span>Thú cưng</span>
+                                    <span class="add-guest-link">Bạn muốn  mang theo động vật hỗ trợ?</span>
+                                </div>
+
+                                <div class="form__add-guest-right">
+                                    <span>0</span>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </li>
+                        </ul>
+                        <span class="form__add-guest-des">Nếu bạn may mắn có nhiều hơn 2 thú cưng đi cùng, hãy nhớ cho Chủ nhà biết.</span>
+                    </div>
+                </label>
+            </ul>
+            <ul class="header__body-list-second hide">
+                <label for="openSearchLocation" class="header__body-item-second">
+                    <div class="header__body-container">
+                        <span class="header__body-title ">Địa điểm</span>
+                        <span class="header__body-name">Bạn sắp đi đâu?</span>
+
+                        <!-- search lcation -->
+                    </div>
+                    <input type="checkbox" id="openSearchLocation">
+                    <div class="seach-location">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>Lân cận</span>
+                    </div>
+                </label>
+                <li class="header__body-item-second">
+                    <div class="header__body-container">
+                        <span class="header__body-title">Ngày</span>
+                        <span class="header__body-name">Thêm Thời điểm bạn muốn tham gia</span>
+                    </div>
+                    <label for="extend" class="header__body-icon header__body-second-icon">
+                            <i  class="fas fa-search nav__search-icon nav__search-second-icon"></i>
+                            <input type="checkbox" id="extend">
+                            <span class="header__body-second-span">Tìm kiếm</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="header__bottom">
+            <div class="header__bottom-left">
+                <ul class="list-left header__list">
+                    <li class="item__left header__item">
+                        <span class="item__left-name">Khách</span>
+                        <i class="fas fa-chevron-down item__left-icon"></i>
+                    </li>
+                    <li class="item__left header__item">
+                        <span class="item__left-name">Giá</span>
+                        <i class="fas fa-chevron-down item__left-icon"></i>
+                    </li>
+                    <li class="item__left header__item">
+                        <span class="item__left-name">Ngôn ngữ có thể sử dụng</span>
+                        <i class="fas fa-chevron-down item__left-icon"></i>
+                    </li>
+                    <li class="item__left header__item">
+                        <span class="item__left-name">Thời gian trong ngày</span>
+                        <i class="fas fa-chevron-down item__left-icon"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__bottom-right">
+                <ul class="list-right header__list">
+                    <li class="item__right header__item">
+                        <span class="item__right-name">Nghệ thuật và văn hóa</span>
+                    </li>
+                    <li class="hide-on-tablet item__right header__item hide-pc-normal">
+                        <span class="item__right-name">Giải trí</span>
+                    </li>
+                    <li class="hide-on-tablet item__right header__item hide-pc-normal">
+                        <span class="item__right-name ">Thức ăn và đò ưống</span>
+                    </li>
+                    <li class="hide-on-tablet item__right header__item hide-pc-normal">
+                        <span class="item__right-name">Thể thao</span>
+                    </li>
+                    <li class="item__right header__item openFormSelect">
+                        <i class="fas fa-sliders-h item__right-icon"></i>
+                        <span class="item__right-name hide-on-tablet">Bộ lọc</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="home__product">
+        <div class="grid wide">
+            <div class="home__product-des">
+                <span class="des-first">48 trải nghiệm</span>
+                <h1>Trải nghiệm gần bạn</h1>
+                <span class="des-last">Kiểm tra lại quy định hạn chế đi lại trong đại dịch COVID-19 trước khi đặt.Tìm hiểu thêm</span>
+            </div>
+            <div class="home__product-container">
+                <div class="row">
+                    <div class="col l-2-4 m-3 c-6 margin-bottom">
+                        <div class="product__info">
+                            <div class="product__info-header">
+                                <a href="" class="product__info-link">
+                                    <img src="https://tse1.mm.bing.net/th?id=OIP._QJvm6JSi7jekZ4b20kkIQHaEn&pid=Api&P=0&w=286&h=179" alt="" class="product__info-img">
+                                </a>
+                            </div>
+                            <a href="#" class="product__info-body">
+                                <div class="product__info-top">
+                                    <div class="product__info-rate">
+                                        <i class="fas fa-star product__info-star"></i>
+                                        <span class="product__info-ratio">4,99</span>
+                                        <span class="product__ìnfo-number">(114)</span>
+                                    </div>
+                                    <span class="product__info-origin">Hoa Kỳ</span>
+                                </div>
+                                <div class="product__info-bottom">
+                                    <span class="product__info-des">
+                                        Pain The Perfect New York City Vacation With
+                                        Pain The Perfect New York City Vacation With
+                                    </span>
+                                    <div class="product_info-des-2">
+                                        <span class="product__info-from">Từ $43</span>
+                                        <span class="product__info-people">/người</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <i class="far fa-heart product__info-heart"></i>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6 margin-bottom">
+                        <div class="product__info">
+                            <div class="product__info-header">
+                                <a href="" class="product__info-link">
+                                    <img src="https://tse1.mm.bing.net/th?id=OIP._QJvm6JSi7jekZ4b20kkIQHaEn&pid=Api&P=0&w=286&h=179" alt="" class="product__info-img">
+                                </a>
+                            </div>
+                            <a href="#" class="product__info-body">
+                                <div class="product__info-top">
+                                    <div class="product__info-rate">
+                                        <i class="fas fa-star product__info-star"></i>
+                                        <span class="product__info-ratio">4,99</span>
+                                        <span class="product__ìnfo-number">(114)</span>
+                                    </div>
+                                    <span class="product__info-origin">Hoa Kỳ</span>
+                                </div>
+                                <div class="product__info-bottom">
+                                    <span class="product__info-des">
+                                        Pain The Perfect New York City Vacation With
+                                        Pain The Perfect New York City Vacation With
+                                    </span>
+                                    <div class="product_info-des-2">
+                                        <span class="product__info-from">Từ $43</span>
+                                        <span class="product__info-people">/người</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <i class="far fa-heart product__info-heart"></i>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6 margin-bottom">
+                        <div class="product__info">
+                            <div class="product__info-header">
+                                <a href="" class="product__info-link">
+                                    <img src="https://tse1.mm.bing.net/th?id=OIP._QJvm6JSi7jekZ4b20kkIQHaEn&pid=Api&P=0&w=286&h=179" alt="" class="product__info-img">
+                                </a>
+                            </div>
+                            <a href="#" class="product__info-body">
+                                <div class="product__info-top">
+                                    <div class="product__info-rate">
+                                        <i class="fas fa-star product__info-star"></i>
+                                        <span class="product__info-ratio">4,99</span>
+                                        <span class="product__ìnfo-number">(114)</span>
+                                    </div>
+                                    <span class="product__info-origin">Hoa Kỳ</span>
+                                </div>
+                                <div class="product__info-bottom">
+                                    <span class="product__info-des">
+                                        Pain The Perfect New York City Vacation With
+                                        Pain The Perfect New York City Vacation With
+                                    </span>
+                                    <div class="product_info-des-2">
+                                        <span class="product__info-from">Từ $43</span>
+                                        <span class="product__info-people">/người</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <i class="far fa-heart product__info-heart"></i>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6 margin-bottom">
+                        <div class="product__info">
+                            <div class="product__info-header">
+                                <a href="" class="product__info-link">
+                                    <img src="https://tse1.mm.bing.net/th?id=OIP._QJvm6JSi7jekZ4b20kkIQHaEn&pid=Api&P=0&w=286&h=179" alt="" class="product__info-img">
+                                </a>
+                            </div>
+                            <a href="#" class="product__info-body">
+                                <div class="product__info-top">
+                                    <div class="product__info-rate">
+                                        <i class="fas fa-star product__info-star"></i>
+                                        <span class="product__info-ratio">4,99</span>
+                                        <span class="product__ìnfo-number">(114)</span>
+                                    </div>
+                                    <span class="product__info-origin">Hoa Kỳ</span>
+                                </div>
+                                <div class="product__info-bottom">
+                                    <span class="product__info-des">
+                                        Pain The Perfect New York City Vacation With
+                                        Pain The Perfect New York City Vacation With
+                                    </span>
+                                    <div class="product_info-des-2">
+                                        <span class="product__info-from">Từ $43</span>
+                                        <span class="product__info-people">/người</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <i class="far fa-heart product__info-heart"></i>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6 margin-bottom">
+                        <div class="product__info">
+                            <div class="product__info-header">
+                                <a href="" class="product__info-link">
+                                    <img src="https://tse1.mm.bing.net/th?id=OIP._QJvm6JSi7jekZ4b20kkIQHaEn&pid=Api&P=0&w=286&h=179" alt="" class="product__info-img">
+                                </a>
+                            </div>
+                            <a href="#" class="product__info-body">
+                                <div class="product__info-top">
+                                    <div class="product__info-rate">
+                                        <i class="fas fa-star product__info-star"></i>
+                                        <span class="product__info-ratio">4,99</span>
+                                        <span class="product__ìnfo-number">(114)</span>
+                                    </div>
+                                    <span class="product__info-origin">Hoa Kỳ</span>
+                                </div>
+                                <div class="product__info-bottom">
+                                    <span class="product__info-des">
+                                        Pain The Perfect New York City Vacation With
+                                        Pain The Perfect New York City Vacation With
+                                    </span>
+                                    <div class="product_info-des-2">
+                                        <span class="product__info-from">Từ $43</span>
+                                        <span class="product__info-people">/người</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <i class="far fa-heart product__info-heart"></i>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6 margin-bottom">
+                        <div class="product__info">
+                            <div class="product__info-header">
+                                <a href="" class="product__info-link">
+                                    <img src="https://tse1.mm.bing.net/th?id=OIP._QJvm6JSi7jekZ4b20kkIQHaEn&pid=Api&P=0&w=286&h=179" alt="" class="product__info-img">
+                                </a>
+                            </div>
+                            <a href="#" class="product__info-body">
+                                <div class="product__info-top">
+                                    <div class="product__info-rate">
+                                        <i class="fas fa-star product__info-star"></i>
+                                        <span class="product__info-ratio">4,99</span>
+                                        <span class="product__ìnfo-number">(114)</span>
+                                    </div>
+                                    <span class="product__info-origin">Hoa Kỳ</span>
+                                </div>
+                                <div class="product__info-bottom">
+                                    <span class="product__info-des">
+                                        Pain The Perfect New York City Vacation With
+                                        Pain The Perfect New York City Vacation With
+                                    </span>
+                                    <div class="product_info-des-2">
+                                        <span class="product__info-from">Từ $43</span>
+                                        <span class="product__info-people">/người</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <i class="far fa-heart product__info-heart"></i>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6 margin-bottom">
+                        <div class="product__info">
+                            <div class="product__info-header">
+                                <a href="" class="product__info-link">
+                                    <img src="https://tse1.mm.bing.net/th?id=OIP._QJvm6JSi7jekZ4b20kkIQHaEn&pid=Api&P=0&w=286&h=179" alt="" class="product__info-img">
+                                </a>
+                            </div>
+                            <a href="#" class="product__info-body">
+                                <div class="product__info-top">
+                                    <div class="product__info-rate">
+                                        <i class="fas fa-star product__info-star"></i>
+                                        <span class="product__info-ratio">4,99</span>
+                                        <span class="product__ìnfo-number">(114)</span>
+                                    </div>
+                                    <span class="product__info-origin">Hoa Kỳ</span>
+                                </div>
+                                <div class="product__info-bottom">
+                                    <span class="product__info-des">
+                                        Pain The Perfect New York City Vacation With
+                                        Pain The Perfect New York City Vacation With
+                                    </span>
+                                    <div class="product_info-des-2">
+                                        <span class="product__info-from">Từ $43</span>
+                                        <span class="product__info-people">/người</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <i class="far fa-heart product__info-heart"></i>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6 margin-bottom">
+                        <div class="product__info">
+                            <div class="product__info-header">
+                                <a href="" class="product__info-link">
+                                    <img src="https://tse1.mm.bing.net/th?id=OIP._QJvm6JSi7jekZ4b20kkIQHaEn&pid=Api&P=0&w=286&h=179" alt="" class="product__info-img">
+                                </a>
+                            </div>
+                            <a href="#" class="product__info-body">
+                                <div class="product__info-top">
+                                    <div class="product__info-rate">
+                                        <i class="fas fa-star product__info-star"></i>
+                                        <span class="product__info-ratio">4,99</span>
+                                        <span class="product__ìnfo-number">(114)</span>
+                                    </div>
+                                    <span class="product__info-origin">Hoa Kỳ</span>
+                                </div>
+                                <div class="product__info-bottom">
+                                    <span class="product__info-des">
+                                        Pain The Perfect New York City Vacation With
+                                        Pain The Perfect New York City Vacation With
+                                    </span>
+                                    <div class="product_info-des-2">
+                                        <span class="product__info-from">Từ $43</span>
+                                        <span class="product__info-people">/người</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <i class="far fa-heart product__info-heart"></i>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6 margin-bottom">
+                        <div class="product__info">
+                            <div class="product__info-header">
+                                <a href="" class="product__info-link">
+                                    <img src="https://tse1.mm.bing.net/th?id=OIP._QJvm6JSi7jekZ4b20kkIQHaEn&pid=Api&P=0&w=286&h=179" alt="" class="product__info-img">
+                                </a>
+                            </div>
+                            <a href="#" class="product__info-body">
+                                <div class="product__info-top">
+                                    <div class="product__info-rate">
+                                        <i class="fas fa-star product__info-star"></i>
+                                        <span class="product__info-ratio">4,99</span>
+                                        <span class="product__ìnfo-number">(114)</span>
+                                    </div>
+                                    <span class="product__info-origin">Hoa Kỳ</span>
+                                </div>
+                                <div class="product__info-bottom">
+                                    <span class="product__info-des">
+                                        Pain The Perfect New York City Vacation With
+                                        Pain The Perfect New York City Vacation With
+                                    </span>
+                                    <div class="product_info-des-2">
+                                        <span class="product__info-from">Từ $43</span>
+                                        <span class="product__info-people">/người</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <i class="far fa-heart product__info-heart"></i>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6 margin-bottom">
+                        <div class="product__info">
+                            <div class="product__info-header">
+                                <a href="" class="product__info-link">
+                                    <img src="https://tse1.mm.bing.net/th?id=OIP._QJvm6JSi7jekZ4b20kkIQHaEn&pid=Api&P=0&w=286&h=179" alt="" class="product__info-img">
+                                </a>
+                            </div>
+                            <a href="#" class="product__info-body">
+                                <div class="product__info-top">
+                                    <div class="product__info-rate">
+                                        <i class="fas fa-star product__info-star"></i>
+                                        <span class="product__info-ratio">4,99</span>
+                                        <span class="product__ìnfo-number">(114)</span>
+                                    </div>
+                                    <span class="product__info-origin">Hoa Kỳ</span>
+                                </div>
+                                <div class="product__info-bottom">
+                                    <span class="product__info-des">
+                                        Pain The Perfect New York City Vacation With
+                                        Pain The Perfect New York City Vacation With
+                                    </span>
+                                    <div class="product_info-des-2">
+                                        <span class="product__info-from">Từ $43</span>
+                                        <span class="product__info-people">/người</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <i class="far fa-heart product__info-heart"></i>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6 margin-bottom">
+                        <div class="product__info">
+                            <div class="product__info-header">
+                                <a href="" class="product__info-link">
+                                    <img src="https://tse1.mm.bing.net/th?id=OIP._QJvm6JSi7jekZ4b20kkIQHaEn&pid=Api&P=0&w=286&h=179" alt="" class="product__info-img">
+                                </a>
+                            </div>
+                            <a href="#" class="product__info-body">
+                                <div class="product__info-top">
+                                    <div class="product__info-rate">
+                                        <i class="fas fa-star product__info-star"></i>
+                                        <span class="product__info-ratio">4,99</span>
+                                        <span class="product__ìnfo-number">(114)</span>
+                                    </div>
+                                    <span class="product__info-origin">Hoa Kỳ</span>
+                                </div>
+                                <div class="product__info-bottom">
+                                    <span class="product__info-des">
+                                        Pain The Perfect New York City Vacation With
+                                        Pain The Perfect New York City Vacation With
+                                    </span>
+                                    <div class="product_info-des-2">
+                                        <span class="product__info-from">Từ $43</span>
+                                        <span class="product__info-people">/người</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <i class="far fa-heart product__info-heart"></i>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6">
+                        <div class="product__info">
+                            <div class="product__info-header">
+                                <a href="" class="product__info-link">
+                                    <img src="https://tse1.mm.bing.net/th?id=OIP._QJvm6JSi7jekZ4b20kkIQHaEn&pid=Api&P=0&w=286&h=179" alt="" class="product__info-img">
+                                </a>
+                            </div>
+                            <a href="#" class="product__info-body">
+                                <div class="product__info-top">
+                                    <div class="product__info-rate">
+                                        <i class="fas fa-star product__info-star"></i>
+                                        <span class="product__info-ratio">4,99</span>
+                                        <span class="product__ìnfo-number">(114)</span>
+                                    </div>
+                                    <span class="product__info-origin">Hoa Kỳ</span>
+                                </div>
+                                <div class="product__info-bottom">
+                                    <span class="product__info-des">
+                                        Pain The Perfect New York City Vacation With
+                                        Pain The Perfect New York City Vacation With
+                                    </span>
+                                    <div class="product_info-des-2">
+                                        <span class="product__info-from">Từ $43</span>
+                                        <span class="product__info-people">/người</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <i class="far fa-heart product__info-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body__btn">
+                <button>Tải thêm</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="grid wide">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="fom__top-container">
+                            <h5 class="footer__top-title">Hỗ trợ</h5>
+                            <ul class="footer__top-list">
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Trung Tâm hỗ trợ</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Thông tin an toàn</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Các tùy chọn hủy</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Biện pháp ứng phó với đại dịch COVID-19 của chúng tôi</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Hỗ trợ người khuyết tật</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Báo cáo lo ngại của hàng xóm</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="fom__top-container">
+                            <h5 class="footer__top-title">Cộng đồng</h5>
+                            <ul class="footer__top-list">
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Airbnb.org: nhà ở cứu trợ</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Hỗ trợ dân tị nạn Afghanistan</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Vì sự đa dạng và thân thuộc</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Chống phân biệt đối xử</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="fom__top-container">
+                            <h5 class="footer__top-title">Đón tiếp khách</h5>
+                            <ul class="footer__top-list">
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Thử đón tiếp khách</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">AirCover: bảo vệ cho Host</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Xem tài nguyên đón tiếp khách</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Truy cập diễn đàn cộng đồng</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Đón tiếp khách có trách nhiệm</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="fom__top-container">
+                            <h5 class="footer__top-title">Giới thiệu</h5>
+                            <ul class="footer__top-list">
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Trang tin tức</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Tìm hiểu các tính năng mới</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Thư ngỏ từ các nhà sáng lập</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Cơ hội nghề nghiệp</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Nhà đầu tư</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="" class="footer__item-link">Airbnb Luxe</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-left">
+                    <span>© 2021 Airbnb, Inc.</span>
+                    <ul class="footer__bottom-left-list">
+                        <li class="footer__bottom-left-item"><a href="" class="footer__bottom-left-link">Quyền riêng tư</a></li>
+                        <li class="footer__bottom-left-item"><a href="" class="footer__bottom-left-link">Điều khoản</a></li>
+                        <li class="footer__bottom-left-item"><a href="" class="footer__bottom-left-link">Sơ đồ trang web</a></li>
+                    </ul>
+                </div>
+                <div class="footer__bottom-right">
+                    <label for="openModal2" class="footer__bottom-right-language">
+                        <i class="fas fa-globe"></i>
+                        <a>Tiếng Việt(VN)</a>
+                    </label>
+                    <div class="footer__bottom-right-currency">
+                        <span>$</span>
+                        <a href="">USD</a>
+                    </div>
+                    <div class="footer__bottom-right-social">
+                        <ul class="footer__bottom-right-list">
+                            <li class="footer__bottom-right-item">
+                                <a href="" class="footer__bottom-right-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="footer__bottom-right-item">
+                                <a href="" class="footer__bottom-right-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="footer__bottom-right-item">
+                                <a href="" class="footer__bottom-right-link">
+                                    <i class="fab fa-instagram-square"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--form select other -->
+    <div class="modal hide"></div>
+
+    <div class="form-select hide">
+        <div class="form-select__top">
+            <i class="fas fa-times select-top__icon"></i>
+            <h3 class="select-top__tittle">Bộ lọc khác</h3>
+        </div>
+        <div class="form-select__body">
+            <div class="select__body-wrapper">
+                <h2 class="select-body__tittle">Loại hoạt động</h2>
+                <ul class="select-body__list">
+                    <li class="select-body__item">
+                        <input id="input1" type="checkbox" class="select-body__input">
+                        <label for="input1" class="select-body__des body__des">Nghệ thuật và văn hóa</label>
+                    </li>
+                    <li class="select-body__item">
+                        <input id="input2" type="checkbox" class="select-body__input">
+                        <label for="input2" class="select-body__des body__des">Giải trí</label>
+                    </li>
+                    <li class="select-body__item">
+                        <input id="input3" type="checkbox" class="select-body__input">
+                        <label for="input3" class="select-body__des body__des">Thức ăn và đồ uống</label>
+                    </li>
+                    <li class="select-body__item">
+                        <input id="input4" type="checkbox" class="select-body__input">
+                        <label for="input4" class="select-body__des body__des">Thể thao</label>
+                    </li>
+                </ul>
+                <div class="select-body__display-add">
+                    <span>Hiện thị tất cả</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="select__body-wrapper">
+                <h2 class="select-body__tittle">Khoảng giá</h2>
+                <span class="body__des second-des">Giá trung bình cho một trải nghiệm là $59.</span>
+                <div class="select-body__menu list-price">
+                    <div class="select-body__item price-left">
+                        <button class="select-body-btn btn-left">
+                            <span class="select-body__des body__des">giá tối thiểu</span>
+                            <span class="select__body-price ">$ 1</span>
+                        </button>
+                    </div>
+                    <div class="select-body__item price-right">
+                        <button class="select-body-btn btn-right">
+                            <span class="select-body__des body__des ">giá tối da</span>
+                            <span class="select__body-price">$ 100 +</span>
+                        </button>
+                    </div>
+                    <div class="control control-left"></div>
+                    <div class="control control-right"></div>
+                </div>
+            </div>
+            <div class="select__body-wrapper">
+                <h2 class="select-body__tittle">Ngôn ngữ có thể sử dụng
+                </h2>
+                <ul class="select-body__list">
+                    <li class="select-body__item">
+                        <input id="input5" type="checkbox" class="select-body__input">
+                        <label for="input5" class="select-body__des body__des">Tiếng Anh</label>
+                    </li>
+                    <li class="select-body__item">
+                        <input id="input6" type="checkbox" class="select-body__input">
+                        <label for="input6" class="select-body__des body__des">Tiếng Đức</label>
+                    </li>
+                    <li class="select-body__item">
+                        <input id="input7" type="checkbox" class="select-body__input">
+                        <label for="input7" class="select-body__des body__des">Tiếng Pháp</label>
+                    </li>
+                    <li class="select-body__item">
+                        <input id="input8" type="checkbox" class="select-body__input">
+                        <label for="input9" class="select-body__des body__des">Tiếng Nhật</label>
+                    </li>
+                </ul>
+                <div class="select-body__display-add">
+                    <span>Hiện thị tất cả</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+
+            <div class="select__body-wrapper">
+                <h2 class="select-body__tittle">Thời gian trong ngày
+                </h2>
+                <ul class="select-body__list">
+                    <li class="select-body__item">
+                        <input id="input10" type="checkbox" class="select-body__input">
+                        <label for="input10" class="select-body__des body__des session">
+                            <span>Buổi sáng</span>
+                            <span>Bắt đầu trước 12:00</span>
+                        </label>
+                    </li>
+                    <li class="select-body__item">
+                        <input id="input11" type="checkbox" class="select-body__input">
+                        <label for="input11" class="select-body__des body__des session">
+                            <span>Buổi sáng</span>
+                            <span>Bắt đầu trước 12:00</span>
+                        </label>
+                    </li>
+                    <li class="select-body__item">
+                        <input id="input13" type="checkbox" class="select-body__input">
+                        <label for="input13" class="select-body__des body__des session">  
+                            <span>Buổi sáng</span>
+                            <span>Bắt đầu trước 12:00</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="select__body-wrapper">
+                <h2 class="select-body__tittle">Đặc điểm phù hợp với người có nhu cầu đặc biệt
+                </h2>
+                <ul class="select-body__list">
+                    <li class="select-body__item">
+                        <input id="input15" type="checkbox" class="select-body__input">
+                        <label for="input15" class="select-body__des body__des">Không có cầu thang hoặc bậc thang
+                        </label>
+                    </li>
+                    <li class="select-body__item">
+                        <input id="input16" type="checkbox" class="select-body__input">
+                        <label for="input16" class="select-body__des body__des">Không có cầu thang hoặc bậc thang
+                        </label>
+                    </li>
+                    <li class="select-body__item">
+                        <input id="input17" type="checkbox" class="select-body__input">
+                        <label for="input17" class="select-body__des body__des">Không có cầu thang hoặc bậc thang
+                        </label>
+                    </li>
+                    <li class="select-body__item">
+                        <input id="input18" type="checkbox" class="select-body__input">
+                        <label for="input18" class="select-body__des body__des">Không có cầu thang hoặc bậc thang
+                        </label>
+                    </li>
+                </ul>
+                <div class="select-body__display-add">
+                    <span>Hiển thị tất cả tiện nghi phù hợp với người có nhu cầu đặc biệt</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="form-select__bottom">
+            <span class="select__bottom-remove">Xóa lựa chọn</span>
+            <button class="select__bottom-btn">Hiện thị 48 kết quả</button>
+        </div>
+    </div>
+
+</body>
+<script src="../main.js"></script>
+
+</html>
